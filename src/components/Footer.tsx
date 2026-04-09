@@ -24,7 +24,7 @@ export default function Footer() {
           <div>
             <h4 className="font-display font-bold text-brand-navy mb-6">Contact</h4>
             <ul className="space-y-4 text-sm text-slate-500 font-medium">
-              <li>info@cpbeverage.com</li>
+              <li>yujg@cpgroup.cn</li>
               <li>CP (Shangri-la) Beverage Co.</li>
               <li>China / International</li>
             </ul>
