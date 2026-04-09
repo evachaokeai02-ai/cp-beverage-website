@@ -11,9 +11,8 @@
 
 @layer base {
   body {
-  font-family: sans-serif;
-}
-
+    @apply font-sans text-brand-navy bg-slate-50 antialiased;
+  }
   
   h1, h2, h3, h4, h5, h6 {
     @apply font-display tracking-tight;
