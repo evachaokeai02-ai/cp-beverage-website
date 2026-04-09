@@ -28,10 +28,15 @@ export default function Hero({ t }: any) {
             </span>
           </div>
           
-          <h1 className="text-6xl md:text-8xl lg:text-9xl font-display font-bold leading-[0.9] tracking-tighter">
+          <h1 className="text-6xl md:text-8xl lg:text-9xl font-display font-bold tracking-tighter">
+            <span className="block leading-tight">
             {t.hero.title1}
-            <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-brand-blue to-cyan-300">
+            </span>
+            <span
+              className={`block leading-tight text-transparent bg-clip-text bg-gradient-to-r from-white via-brand-blue to-cyan-300 ${
+                t.hero.title1.length > 5 ? 'mt-3' : 'mt-2'
+              }`}
+            >
               {t.hero.title2}
             </span>
           </h1>
