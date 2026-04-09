@@ -28,16 +28,20 @@ export default function Hero({ t }: any) {
             </span>
           </div>
           
-          <h1 className="text-6xl md:text-8xl lg:text-9xl font-display font-bold tracking-tighter">
-            <span className="block leading-tight">
-            {t.hero.title1}
-            </span>
+          <h1 className="font-semibold text-slate-900 text-4xl md:text-6xl">
             <span
-              className={`block leading-tight text-transparent bg-clip-text bg-gradient-to-r from-white via-brand-blue to-cyan-300 ${
-                t.hero.title1.length > 5 ? 'mt-3' : 'mt-2'
+              className={`block ${
+                isZh ? "leading-[1.2]" : "leading-[1.05]"
               }`}
-            >
-              {t.hero.title2}
+              >
+            {t.hero.title1} 
+            </span>
+            <span   
+              className={`block ${     
+                isZh ? "mt-2 leading-[1.2]" : "mt-2 leading-[1.05]"    
+              }`}  
+            >    
+              {t.hero.title2}  
             </span>
           </h1>
           
