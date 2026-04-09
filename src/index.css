@@ -11,15 +11,12 @@
 
 @layer base {
   body {
-    @apply font-sans text-brand-navy bg-slate-50 antialiased;
-  }
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+
   
   h1, h2, h3, h4, h5, h6 {
     @apply font-display tracking-tight;
   }
-}
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC",
-    "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
 }
