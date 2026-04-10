@@ -6,9 +6,8 @@ export default function Hero({ t }: any) {
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img
-          src="https://i.imgur.com/hPWDGeS.jpeg"
+          src="/images/hero-shangrila.jpg"
           alt="Colorful Shangri-La"
-          referrerPolicy="no-referrer"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-brand-navy/30" />
