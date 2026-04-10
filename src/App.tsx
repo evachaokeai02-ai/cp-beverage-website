@@ -15,7 +15,7 @@ export default function App() {
     <div id="top" className="min-h-screen bg-white">
       <Navbar lang={lang} setLang={setLang} t={t} />
       <Hero t={t} />
-      <ProductSection />
+      <ProductSection t={t} />
       <ValueProp />
       <CTA />
       <Footer t={t} />
