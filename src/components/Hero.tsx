@@ -62,8 +62,6 @@ export default function Hero({ t }: any) {
         </motion.div>
       </div>
 
-      <div className="absolute top-1/4 -left-20 w-64 h-64 bg-orange-500/20 rounded-full blur-[120px] animate-pulse" />
-      <div className="absolute bottom-1/4 -right-20 w-80 h-80 bg-brand-blue/20 rounded-full blur-[150px] animate-pulse delay-700" />
 
       <motion.div 
         initial={{ opacity: 0 }}
