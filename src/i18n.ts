@@ -48,21 +48,21 @@ export const translations = {
           name: "Freshly Shaken Honey Water",
           description:
             "Real honey stored in the cap. Twist, shake, and enjoy a fresher honey-lime drinking ritual with a more interactive and memorable product experience.",
-          image: "/product-honey.png",
+          image: "/ProductSection-Honey.png",
         },
         {
           id: "p-2",
           name: "CP Electrolyte Beverage",
           description:
             "Fast, functional hydration with electrolyte support and a crisp lemon profile, designed for active lifestyles and everyday recovery moments.",
-          image: "/product-electrolyte.jpeg",
+          image: "/ProductSection-Electrolyte Water.jpeg",
         },
         {
           id: "p-3",
           name: "CP Natural Mineral Water",
           description:
             "Premium natural mineral water sourced from pristine springs, delivering a clean taste, balanced hydration, and a refined daily drinking experience.",
-          image: "/product-water.jpg",
+          image: "/ProductSection-water.jpg",
         },
       ],
     },
@@ -165,24 +165,24 @@ export const translations = {
       portfolio: [
         {
           id: "p-1",
-          name: "摇摇蜂蜜水",
+          name: "现摇蜂蜜水",
           description:
-            "将蜂蜜锁鲜于瓶盖之中，轻轻旋开、摇匀即饮，让产品更有互动感，也让蜂蜜青柠风味更清新、更有记忆点。",
-          image: "/product-honey.png",
+            "将蜂蜜锁鲜于瓶盖之中，轻轻旋开、摇匀即饮。产品有互动感，蜂蜜青柠风味更清新、更有记忆点。",
+          image: "/ProductSection-Honey.png",
         },
         {
           id: "p-2",
           name: "正大电解质饮料",
           description:
             "围绕运动补水与日常恢复场景打造，补充电解质，入口清爽轻快，以更适合现代生活方式的柠檬风味带来高效补水体验。",
-          image: "/product-electrolyte.jpeg",
+          image: "/ProductSection-Electrolyte Water.jpeg",
         },
         {
           id: "p-3",
           name: "正大天然矿泉水",
           description:
             "甄选优质天然水源，口感清透纯净，满足高品质日常饮水需求，也更契合现代零售场景下的健康饮用趋势。",
-          image: "/product-water.jpg",
+          image: "/ProductSection-water.jpg",
         },
       ],
     },
