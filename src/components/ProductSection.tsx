@@ -33,7 +33,7 @@ const otherProducts: Product[] = [
     id: 'p-3',
     name: 'CP Natural Mineral Water',
     description: 'Premium natural mineral water sourced from pristine springs. Crystal-clear hydration with a balanced mineral profile.',
-    image: '/ProductSection-Water.jpg'
+    image: '/ProductSection-water.jpg'
   }
 ];
 
