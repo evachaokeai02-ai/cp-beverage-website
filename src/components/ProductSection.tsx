@@ -21,19 +21,19 @@ const otherProducts: Product[] = [
     id: 'p-1',
     name: 'Freshly Shaken Honey Water',
     description: 'Real honey stored in the cap. Twist and shake for a fresh, natural honey lime beverage. Zero additives, pure refreshment.',
-    image: 'https://i.imgur.com/CsfmMK1.jpeg'
+    image: '/ProductSection-Shake Honey.png'
   },
   {
     id: 'p-2',
     name: 'CP Electrolyte Beverage',
     description: 'High-performance hydration with ≥500mg/L electrolyte content. Low sugar, refreshing lemon flavor for rapid recovery.',
-    image: 'https://i.imgur.com/QsqVhJm.jpeg'
+    image: '/ProductSection-Electrolyte Water.jpeg'
   },
   {
     id: 'p-3',
     name: 'CP Natural Mineral Water',
     description: 'Premium natural mineral water sourced from pristine springs. Crystal-clear hydration with a balanced mineral profile.',
-    image: 'https://i.imgur.com/dud0Gg5.jpeg'
+    image: '/ProductSection-Water.jpg'
   }
 ];
 
