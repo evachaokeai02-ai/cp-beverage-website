@@ -12,7 +12,7 @@ export default function App() {
   const t = translations[lang];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div id="top" className="min-h-screen bg-white">
       <Navbar lang={lang} setLang={setLang} t={t} />
       <Hero t={t} />
       <ProductSection />
