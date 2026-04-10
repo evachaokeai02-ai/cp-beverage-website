@@ -45,7 +45,7 @@ export const translations = {
       portfolio: [
         {
           id: "p-1",
-          name: "Freshly Shaken Honey Water",
+          name: "CP Shake Honey",
           description:
             "Real honey stored in the cap. Twist, shake, and enjoy a fresher honey-lime drinking ritual with a more interactive and memorable product experience.",
           image: "/ProductSection-Honey.png",
@@ -130,7 +130,7 @@ export const translations = {
     hero: {
       badge: "正大（香格里拉）饮品有限公司",
       title1: "一口邂逅",
-      title2: "多彩香格里拉",
+      title2: "多彩的香格里拉",
       subtitle:
         "灵感源自香格里拉高原的纯净自然与人文想象，呈现更轻盈、更清爽，也更具品质感的现代饮品体验。",
       explore: "探索产品系列",
@@ -139,7 +139,7 @@ export const translations = {
 
     products: {
       joyTitle: "悦系列",
-      joySubtitle: "香格里拉气泡水系列（预计 2026 年上市）",
+      joySubtitle: "香格里拉气泡水系列（预计 2026年4月 上市）",
       joyComingSoon: "敬请期待",
       joyComingTag: "香格里拉 悦系列",
 
@@ -150,14 +150,14 @@ export const translations = {
           id: "joy-1",
           name: "白桃风味气泡饮｜悦系列",
           description:
-            "以高原白桃灵感为核心，融入烟酰胺与胶原蛋白肽，打造 0 糖、轻负担、兼具颜值感与愉悦感的清新气泡饮体验。",
+            "以高原白桃灵感为核心，添加了烟酰胺与胶原蛋白肽，打造 0 糖、轻负担、兼具颜值感与愉悦感的清新气泡饮体验。",
           image: "",
         },
         {
           id: "joy-2",
           name: "蓝莓风味气泡饮｜悦系列",
           description:
-            "以高原蓝莓风味为灵感，融合叶黄素与胡萝卜素，带来更有层次感、更有活力感的 0 糖气泡饮新选择。",
+            "以高原蓝莓风味为灵感，添加了叶黄素与胡萝卜素，带来更有层次感、更有活力感的 0 糖气泡饮新选择。",
           image: "",
         },
       ],
@@ -165,7 +165,7 @@ export const translations = {
       portfolio: [
         {
           id: "p-1",
-          name: "现摇蜂蜜水",
+          name: "正大现摇蜂蜜水",
           description:
             "将蜂蜜锁鲜于瓶盖之中，轻轻旋开、摇匀即饮。产品有互动感，蜂蜜青柠风味更清新、更有记忆点。",
           image: "/ProductSection-Honey.png",
