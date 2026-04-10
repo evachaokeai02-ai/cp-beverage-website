@@ -16,8 +16,8 @@ export default function App() {
       <Navbar lang={lang} setLang={setLang} t={t} />
       <Hero t={t} />
       <ProductSection t={t} />
-      <ValueProp />
-      <CTA />
+      <ValueProp t={t} />
+      <CTA t={t} />
       <Footer t={t} />
     </div>
   );
