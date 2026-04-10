@@ -21,7 +21,7 @@ const otherProducts: Product[] = [
     id: 'p-1',
     name: 'Freshly Shaken Honey Water',
     description: 'Real honey stored in the cap. Twist and shake for a fresh, natural honey lime beverage. Zero additives, pure refreshment.',
-    image: '/ProductSection-Shake Honey.png'
+    image: '/ProductSection-Shakehoney.png'
   },
   {
     id: 'p-2',
