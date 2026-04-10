@@ -19,7 +19,7 @@ export const translations = {
 
     products: {
       joyTitle: "The [Joy] Series",
-      joySubtitle: "Shangri-La Sparkling Water (Coming 2026)",
+      joySubtitle: "Shangri-La Sparkling Water (Coming April 2026)",
       joyComingSoon: "COMING SOON",
       joyComingTag: "Shangri-La Joy Series",
 
@@ -218,7 +218,7 @@ export const translations = {
     },
 
     cta: {
-      title: "感受正大饮品的更多可能",
+      title: "感受正大饮品的更多可能性",
       description:
         "无论您想了解产品信息、品牌合作，还是进一步交流业务机会，我们都期待与您建立联系。",
       button: "联系我们",
