@@ -102,7 +102,7 @@ export const translations = {
           name: "CP Electrolyte Beverage",
           description:
             "Fast, functional hydration with electrolyte support and a crisp lemon profile, designed for active lifestyles and everyday recovery moments.",
-          image: "/ProductSection-Electrolyte Water.jpeg",
+          image: "/ProductSection-Electrolyte Water.png",
         },
         {
           id: "p-3",
@@ -269,7 +269,7 @@ export const translations = {
           name: "正大电解质饮料",
           description:
             "围绕运动补水与日常恢复场景打造，补充电解质，入口清爽轻快，以更适合现代生活方式的柠檬风味带来高效补水体验。",
-          image: "/ProductSection-Electrolyte Water.jpeg",
+          image: "/ProductSection-Electrolyte Water.png",
         },
         {
           id: "p-3",

@@ -5,7 +5,7 @@ const productImageDimensions: Record<string, { width: number; height: number }> 
   '/ProductSection-Peach-CSD.png': { width: 1122, height: 1402 },
   '/ProductSection-Blueberry-CSD.png': { width: 1122, height: 1402 },
   '/ProductSection-Honey.png': { width: 1887, height: 2335 },
-  '/ProductSection-Electrolyte Water.jpeg': { width: 4000, height: 6000 },
+  '/ProductSection-Electrolyte Water.png': { width: 2172, height: 724 },
   '/ProductSection-water.jpg': { width: 1600, height: 992 },
 };
 
@@ -45,7 +45,7 @@ function ProductImage({ product, priority = false }: ProductImageProps) {
       height={dimensions?.height}
       loading={priority ? 'eager' : 'lazy'}
       decoding="async"
-      className="h-full max-h-[18rem] w-full object-contain object-bottom px-6 pt-7 pb-0 transition-transform duration-700 ease-out group-hover:scale-105 md:max-h-[21rem]"
+      className="h-full max-h-[14rem] w-full object-contain object-bottom px-3 pt-4 pb-0 transition-transform duration-700 ease-out group-hover:scale-105 md:max-h-[16rem]"
     />
   );
 }
@@ -59,13 +59,13 @@ function ProductCard({ product, index, meta, ctaLabel }: ProductCardProps) {
       transition={{ delay: index * 0.07, duration: 0.55, ease: 'easeOut' }}
       className="group h-full"
     >
-      <div className="relative flex h-full min-h-[640px] flex-col overflow-hidden rounded-[2rem] border border-white/80 bg-gradient-to-br from-white via-sky-50/70 to-slate-50 p-5 shadow-[0_24px_70px_rgba(15,23,42,0.10)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_32px_90px_rgba(14,165,233,0.18)] md:p-6">
+      <div className="relative flex h-full min-h-[560px] flex-col overflow-hidden rounded-[2rem] border border-white/80 bg-gradient-to-br from-white via-sky-50/70 to-slate-50 p-5 shadow-[0_24px_70px_rgba(15,23,42,0.10)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_32px_90px_rgba(14,165,233,0.18)] md:p-6">
         <div className={`absolute -right-24 -top-24 h-56 w-56 rounded-full bg-gradient-to-br ${meta.accent} opacity-20 blur-3xl`} />
         <div className="absolute bottom-0 left-0 right-0 h-36 bg-gradient-to-t from-white/90 to-transparent" />
 
-        <div className="relative mb-7 flex h-80 items-end justify-center overflow-hidden rounded-[1.5rem] bg-gradient-to-b from-white/85 via-sky-50/70 to-white/55 shadow-inner md:h-96">
+        <div className="relative mb-6 flex h-60 items-end justify-center overflow-hidden rounded-[1.5rem] bg-gradient-to-b from-white/85 via-sky-50/70 to-white/55 shadow-inner sm:h-64 md:h-72">
           <div className={`absolute left-1/2 top-1/2 h-56 w-56 -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-br ${meta.accent} opacity-25 blur-2xl transition-opacity duration-500 group-hover:opacity-40`} />
-          <div className="absolute bottom-8 left-1/2 h-8 w-44 -translate-x-1/2 rounded-full bg-slate-900/10 blur-xl" />
+          <div className="absolute bottom-5 left-1/2 h-7 w-40 -translate-x-1/2 rounded-full bg-slate-900/10 blur-xl" />
 
           {product.image ? (
             <ProductImage product={product} priority={index === 0} />
