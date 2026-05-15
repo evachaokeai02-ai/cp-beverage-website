@@ -18,9 +18,53 @@ export const translations = {
     },
 
     products: {
-      pageTitle: "Beverage Portfolio",
+      pageTitle: "Our Beverage Collections",
       pageDescription:
-        "Explore CP Beverage's current portfolio and upcoming Shangri-La-inspired sparkling water series in one dedicated product space.",
+        "Crafted from highland inspiration for a cleaner, brighter refreshment ritual — sparkling, functional, and premium water beverages made for modern healthy lifestyles.",
+      heroEyebrow: "Crafted for Modern Refreshment",
+      exploreCta: "Explore Product",
+      collections: {
+        sparkling: {
+          eyebrow: "Sparkling Collection",
+          title: "The [Joy] Sparkling Series",
+          description:
+            "Zero-sugar sparkling refreshment with highland fruit character, delicate bubbles, and a refined functional edge.",
+        },
+        functional: {
+          eyebrow: "Functional Beverage Collection",
+          title: "Active Refreshment Rituals",
+          description:
+            "Purposeful drinks designed around daily energy, hydration, and memorable taste experiences.",
+        },
+        water: {
+          eyebrow: "Premium Water Collection",
+          title: "Highland Water Essentials",
+          description:
+            "Clean, balanced hydration with a pure mineral-water profile for everyday premium drinking occasions.",
+        },
+      },
+      productMeta: {
+        "joy-1": {
+          tags: ["Zero Sugar", "Sparkling", "15% Juice", "Highland Fruit"],
+          accent: "from-pink-200 via-rose-100 to-orange-100",
+        },
+        "joy-2": {
+          tags: ["Zero Sugar", "Sparkling", "NFC Juice", "Highland Fruit"],
+          accent: "from-sky-200 via-blue-100 to-indigo-100",
+        },
+        "p-1": {
+          tags: ["Real Honey", "Shake Ritual", "Lime Fresh"],
+          accent: "from-amber-200 via-yellow-100 to-lime-100",
+        },
+        "p-2": {
+          tags: ["Electrolytes", "Active Hydration", "Lemon Crisp"],
+          accent: "from-cyan-200 via-sky-100 to-blue-100",
+        },
+        "p-3": {
+          tags: ["Mineral Water", "Pure Source", "Daily Premium"],
+          accent: "from-blue-200 via-cyan-100 to-white",
+        },
+      },
       joyTitle: "The [Joy] Series",
       joySubtitle: "Shangri-La Sparkling Water (Coming April 2026)",
       joyComingSoon: "COMING SOON",
@@ -141,9 +185,53 @@ export const translations = {
     },
 
     products: {
-      pageTitle: "产品系列",
+      pageTitle: "现代饮品产品系列",
       pageDescription:
-        "在独立产品页面中集中浏览正大饮品现有产品组合，以及即将推出的香格里拉灵感气泡水悦系列。",
+        "从高原灵感出发，打造更清爽、更轻盈、更具健康感的现代饮品体验，覆盖气泡、功能补水与高品质饮用水场景。",
+      heroEyebrow: "为现代清爽体验而打造",
+      exploreCta: "探索产品",
+      collections: {
+        sparkling: {
+          eyebrow: "气泡饮系列",
+          title: "悦系列气泡饮",
+          description:
+            "以高原果实灵感、细腻气泡与 0 糖配方，呈现更轻盈、更有品质感的功能型清爽体验。",
+        },
+        functional: {
+          eyebrow: "功能饮品系列",
+          title: "日常活力补水体验",
+          description:
+            "围绕日常补水、互动饮用与活力场景打造，让功能价值与好喝体验更加自然融合。",
+        },
+        water: {
+          eyebrow: "高端饮用水系列",
+          title: "高原纯净饮水之选",
+          description:
+            "以清透、平衡、纯净的饮用体验，满足现代消费者对高品质日常饮水的需求。",
+        },
+      },
+      productMeta: {
+        "joy-1": {
+          tags: ["0 糖", "气泡", "15% 果汁", "高原果感"],
+          accent: "from-pink-200 via-rose-100 to-orange-100",
+        },
+        "joy-2": {
+          tags: ["0 糖", "气泡", "NFC 果汁", "高原果感"],
+          accent: "from-sky-200 via-blue-100 to-indigo-100",
+        },
+        "p-1": {
+          tags: ["真蜂蜜", "现摇体验", "青柠清爽"],
+          accent: "from-amber-200 via-yellow-100 to-lime-100",
+        },
+        "p-2": {
+          tags: ["电解质", "活力补水", "柠檬风味"],
+          accent: "from-cyan-200 via-sky-100 to-blue-100",
+        },
+        "p-3": {
+          tags: ["天然矿泉水", "纯净水源", "品质日饮"],
+          accent: "from-blue-200 via-cyan-100 to-white",
+        },
+      },
       joyTitle: "悦系列",
       joySubtitle: "香格里拉气泡水系列（预计 2026年4月 上市）",
       joyComingSoon: "敬请期待",
