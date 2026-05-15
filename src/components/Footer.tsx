@@ -1,4 +1,16 @@
-export default function Footer({ t }: any) {
+import type { MouseEvent } from 'react';
+
+type FooterProps = {
+  t: any;
+  navigate: (path: string) => void;
+};
+
+export default function Footer({ t, navigate }: FooterProps) {
+  const handleNavigate = (path: string) => (event: MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+    navigate(path);
+  };
+
   return (
     <footer className="bg-white border-t border-slate-200 pt-20 pb-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -11,13 +23,25 @@ export default function Footer({ t }: any) {
               {t.footer.company}
             </p>
           </div>
-          
+
           <div>
             <h4 className="font-display font-bold text-brand-navy mb-6">{t.footer.explore}</h4>
             <ul className="space-y-4 text-sm text-slate-500 font-medium">
-              <li><a href="#products" className="hover:text-brand-blue transition-colors">{t.footer.products}</a></li>
-              <li><a href="#about" className="hover:text-brand-blue transition-colors">{t.footer.story}</a></li>
-              <li><a href="#contact" className="hover:text-brand-blue transition-colors">{t.footer.contact}</a></li>
+              <li>
+                <a href="/products" onClick={handleNavigate('/products')} className="hover:text-brand-blue transition-colors">
+                  {t.footer.products}
+                </a>
+              </li>
+              <li>
+                <a href="/#about" onClick={handleNavigate('/#about')} className="hover:text-brand-blue transition-colors">
+                  {t.footer.story}
+                </a>
+              </li>
+              <li>
+                <a href="/#contact" onClick={handleNavigate('/#contact')} className="hover:text-brand-blue transition-colors">
+                  {t.footer.contact}
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -30,7 +54,7 @@ export default function Footer({ t }: any) {
             </ul>
           </div>
         </div>
-        
+
         <div className="pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-slate-400 font-medium">
             {t.footer.rights}

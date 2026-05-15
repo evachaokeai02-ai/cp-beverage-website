@@ -10,6 +10,10 @@
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
   font-family: -apple-system, BlinkMacSystemFont, "PingFang SC",
     "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
@@ -17,5 +21,13 @@
   
   h1, h2, h3, h4, h5, h6 {
     @apply font-display tracking-tight;
+  }
+}
+
+
+@layer utilities {
+  .content-auto {
+    content-visibility: auto;
+    contain-intrinsic-size: 420px 560px;
   }
 }

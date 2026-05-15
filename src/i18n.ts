@@ -18,6 +18,9 @@ export const translations = {
     },
 
     products: {
+      pageTitle: "Beverage Portfolio",
+      pageDescription:
+        "Explore CP Beverage's current portfolio and upcoming Shangri-La-inspired sparkling water series in one dedicated product space.",
       joyTitle: "The [Joy] Series",
       joySubtitle: "Shangri-La Sparkling Water (Coming April 2026)",
       joyComingSoon: "COMING SOON",
@@ -138,6 +141,9 @@ export const translations = {
     },
 
     products: {
+      pageTitle: "产品系列",
+      pageDescription:
+        "在独立产品页面中集中浏览正大饮品现有产品组合，以及即将推出的香格里拉灵感气泡水悦系列。",
       joyTitle: "悦系列",
       joySubtitle: "香格里拉气泡水系列（预计 2026年4月 上市）",
       joyComingSoon: "敬请期待",

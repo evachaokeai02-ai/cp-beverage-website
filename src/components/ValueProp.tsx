@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import { Globe, Package, Zap, ShieldCheck } from 'lucide-react';
 
-export default function ValueProp({ t }: any) {
+export default function ValueProp({ t, navigate }: any) {
   const items = [
     {
       title: t.valueProp.items[0].title,
@@ -50,7 +50,11 @@ export default function ValueProp({ t }: any) {
 
               <div className="pt-4">
                 <a
-                  href="#products"
+                  href="/products"
+                  onClick={(event: any) => {
+                    event.preventDefault();
+                    navigate('/products');
+                  }}
                   className="inline-flex items-center space-x-2 text-brand-navy font-bold hover:text-brand-blue transition-colors group"
                 >
                   <span>{t.valueProp.cta}</span>
