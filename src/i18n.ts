@@ -34,14 +34,14 @@ export const translations = {
           name: "Peach CSD [Joy Series]",
           description:
             "A beauty-inspired sparkling drink crafted with highland white peach juice, niacinamide, and collagen peptides — a zero-sugar expression of freshness, softness, and everyday delight.",
-          image: "",
+          image: "/ProductSection-Peach-CSD.png",
         },
         {
           id: "joy-2",
           name: "Blueberry CSD [Joy Series]",
           description:
             "A vibrant zero-sugar sparkling drink inspired by plateau blueberry, enriched with lutein and carotene for a brighter, more expressive take on functional refreshment.",
-          image: "",
+          image: "/ProductSection-Blueberry-CSD.png",
         },
       ],
 
@@ -157,14 +157,14 @@ export const translations = {
           name: "白桃风味气泡饮｜悦系列",
           description:
             "以高原白桃灵感为核心，添加了烟酰胺与胶原蛋白肽，打造 0 糖、轻负担、兼具颜值感与愉悦感的清新气泡饮体验。",
-          image: "",
+          image: "/ProductSection-Peach-CSD.png",
         },
         {
           id: "joy-2",
           name: "蓝莓风味气泡饮｜悦系列",
           description:
             "以高原蓝莓风味为灵感，添加了叶黄素与胡萝卜素，带来更有层次感、更有活力感的 0 糖气泡饮新选择。",
-          image: "",
+          image: "/ProductSection-Blueberry-CSD.png",
         },
       ],
 

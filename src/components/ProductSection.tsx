@@ -2,6 +2,8 @@ import { motion } from 'motion/react';
 import type { Product } from '../types';
 
 const productImageDimensions: Record<string, { width: number; height: number }> = {
+  '/ProductSection-Peach-CSD.png': { width: 1122, height: 1402 },
+  '/ProductSection-Blueberry-CSD.png': { width: 1122, height: 1402 },
   '/ProductSection-Honey.png': { width: 1887, height: 2335 },
   '/ProductSection-Electrolyte Water.jpeg': { width: 4000, height: 6000 },
   '/ProductSection-water.jpg': { width: 1600, height: 992 },
