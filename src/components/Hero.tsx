@@ -1,13 +1,34 @@
+import type { MouseEvent } from 'react';
 import { motion } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
 
-export default function Hero({ t }: any) {
+type HeroProps = {
+  t: any;
+  navigate: (path: string) => void;
+};
+
+export default function Hero({ t, navigate }: HeroProps) {
+  const handleProductsClick = (event: MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+    navigate('/products');
+  };
+
+  const handleContactClick = (event: MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+    navigate('/#contact');
+  };
+
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img
           src="/hero-shangrila.jpg"
           alt="Colorful Shangri-La"
+          width="5440"
+          height="3448"
+          loading="eager"
+          decoding="async"
+          fetchPriority="high"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-brand-navy/30" />
@@ -17,7 +38,7 @@ export default function Hero({ t }: any) {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ duration: 0.8, ease: 'easeOut' }}
           className="space-y-8"
         >
           <div className="inline-flex items-center space-x-2 px-4 py-2 bg-white/10 backdrop-blur-md rounded-full border border-white/20">
@@ -26,11 +47,9 @@ export default function Hero({ t }: any) {
               {t.hero.badge}
             </span>
           </div>
-          
+
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-display font-bold tracking-tighter">
-            <span className="block leading-tight">
-            {t.hero.title1}
-            </span>
+            <span className="block leading-tight">{t.hero.title1}</span>
             <span
               className={`block leading-tight text-transparent bg-clip-text bg-gradient-to-r from-white via-brand-blue to-cyan-300 ${
                 t.hero.title1.length > 5 ? 'mt-3' : 'mt-2'
@@ -39,21 +58,23 @@ export default function Hero({ t }: any) {
               {t.hero.title2}
             </span>
           </h1>
-          
+
           <p className="max-w-3xl mx-auto text-lg md:text-xl text-white/95 font-medium leading-relaxed italic">
             {t.hero.subtitle}
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-            <a 
-              href="#products" 
+            <a
+              href="/products"
+              onClick={handleProductsClick}
               className="group w-full sm:w-auto px-10 py-4 bg-brand-blue text-white font-bold rounded-full hover:bg-orange-500 transition-all duration-500 flex items-center justify-center space-x-2 shadow-xl shadow-brand-blue/20"
             >
               <span>{t.hero.explore}</span>
               <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
             </a>
-            <a 
-              href="#contact" 
+            <a
+              href="/#contact"
+              onClick={handleContactClick}
               className="w-full sm:w-auto px-10 py-4 bg-white/10 backdrop-blur-md text-white font-bold rounded-full border border-white/30 hover:bg-white/20 transition-all duration-300"
             >
               {t.hero.touch}
@@ -62,8 +83,7 @@ export default function Hero({ t }: any) {
         </motion.div>
       </div>
 
-
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5, duration: 1 }}
