@@ -260,12 +260,12 @@ export const translations = {
     },
 
     products: {
-      pageTitle: "把香格里拉的果香，喝进每一天",
+      pageTitle: "于尘市饮下一口原始的纯粹。",
       pageDescription:
         "从高原果感气泡饮、活力补水到天然矿泉水，正大（香格里拉）以更清爽的口感、更清晰的健康表达与更适合货架的包装语言，打造面向新消费场景的饮品组合。",
       heroEyebrow: "正大（香格里拉）饮品系列",
       catalogEyebrow: "全系列产品",
-      catalogTitle: "为不同场景，准备一口好喝的清爽",
+      catalogTitle: "随时随地，找到适合这一刻的清爽",
       exploreCta: "查看详情",
       backToProducts: "返回全部产品",
       relatedTitle: "你可能也会喜欢",
@@ -295,9 +295,9 @@ export const translations = {
           category: "sparkling-water",
           categoryLabel: "果汁气泡饮",
           shortDescription:
-            "高品质白桃果感遇上细腻气泡，加入维生素 B3 与胶原蛋白肽，轻盈好喝也更有健康记忆点。",
+            "高品质白桃果感遇上细腻气泡，添加了维生素 B3 与胶原蛋白肽，轻盈好喝无负担。",
           longDescription:
-            "悦系列白桃风味气泡饮是一款以果汁为基底的高端气泡饮，甄选云南白桃风味灵感，带来柔和桃香与清透气泡。产品总果汁含量大于 15%，添加 NFC 果汁、维生素 B3 与胶原蛋白肽，0 脂肪，清爽不厚重，适合通勤、办公、轻食与日常放松的每一个时刻。",
+            "悦系列白桃风味气泡饮是一款以果汁为基底的高端气泡饮，甄选云南白桃风味灵感，带来柔和桃香与清透气泡感。产品总果汁含量大于 15%，添加 NFC 果汁、维生素 B3 与胶原蛋白肽，0 脂肪，清爽不厚重，适合通勤、办公、轻食与日常放松的每一个时刻。",
           image: "/ProductSection-Peach-CSD.png",
           flavor: "白桃果香",
           size: "420 ml / 瓶",
@@ -347,13 +347,13 @@ export const translations = {
         {
           id: "p-3",
           slug: "mineral-water",
-          name: "正大天然矿泉水",
+          name: "正大所以润矿泉水",
           category: "mineral-water",
           categoryLabel: "矿泉水",
           shortDescription:
             "围绕纯净水源与品质日饮打造的高品质天然矿泉水。",
           longDescription:
-            "正大天然矿泉水定位为清透、平衡、可靠的日常高品质饮用水，适合家庭、办公、出行与餐饮等需要纯净品质感的饮用场景。",
+            "正大所以润矿泉水定位为清透、平衡、可靠的日常高品质饮用水，适合家庭、办公、出行与餐饮等需要纯净品质感的饮用场景。",
           image: "/ProductSection-Water.png",
           flavor: "纯净水感",
           size: "550 ml / 瓶",
