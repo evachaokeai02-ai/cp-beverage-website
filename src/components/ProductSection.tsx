@@ -5,11 +5,11 @@ import type { MouseEvent } from 'react';
 import type { Product, ProductTab } from '../types';
 
 const productImageDimensions: Record<string, { width: number; height: number }> = {
-  '/ProductSection-Peach-CSD.png': { width: 1122, height: 1402 },
-  '/ProductSection-Blueberry-CSD.png': { width: 1122, height: 1402 },
-  '/ProductSection-Honey.png': { width: 1887, height: 2335 },
-  '/ProductSection-Electrolyte Water.png': { width: 2172, height: 724 },
-  '/ProductSection-water.jpg': { width: 1600, height: 992 },
+  '/ProductSection-Peach-CSD.png': { width: 1156, height: 1360 },
+  '/ProductSection-Blueberry-CSD.png': { width: 1156, height: 1360 },
+  '/ProductSection-Water.png': { width: 1156, height: 1360 },
+  '/ProductSection-Honey.png': { width: 1156, height: 1360 },
+  '/ProductSection-Electrolyte Water.png': { width: 1156, height: 1360 },
 };
 
 type ProductSectionProps = {
