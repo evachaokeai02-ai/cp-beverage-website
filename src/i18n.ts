@@ -18,27 +18,22 @@ export const translations = {
     },
 
     products: {
-      pageTitle: "Shangri-La",
+      pageTitle: "Joy Series",
       pageDescription:
-        "Shangri-La is more than a place name — it is a symbol of purity. Snow mountains, pristine water, forests, rare natural resources, and human belief together shape this highland sanctuary in China. From here, we bring natural clarity, healthy nourishment, and highland vitality into every beverage.",
-      heroEyebrow: "Shangri-La Brand",
-      joyEyebrow: "New Launch · Joy Series",
-      joyTitle: "Live in the present. Enjoy freedom.",
-      joyDescription:
         "Joy begins where the heart opens toward purity: the freedom of body and mind renewed. The Joy Series brings Shangri-La highland fruit juice into the glass — an expansive, original purity to enjoy even in the city.",
-      catalogEyebrow: "Dual-brand product architecture",
+      heroEyebrow: "New Launch · Joy Series",
+      catalogEyebrow: "Product portfolio architecture",
       catalogTitle: "Choose a product family",
       exploreCta: "Explore",
       backToProducts: "Back to products",
       relatedTitle: "More from the catalogue",
       heroStats: [
         { value: "05", label: "Products" },
-        { value: "03", label: "Product Families" },
+        { value: "02", label: "Product Families" },
         { value: "15%+", label: "Juice in Joy" },
       ],
       tabs: [
-        { id: "shangri-la", label: "Shangri-La" },
-        { id: "joy-series", label: "Joy Series" },
+        { id: "shangri-la", label: "Shangri-La Series" },
         { id: "portfolio", label: "Other Portfolio" },
       ],
       detailLabels: {
@@ -55,7 +50,7 @@ export const translations = {
           name: "Peach CSD [Joy Series]",
           category: "sparkling-water",
           categoryLabel: "Juice Sparkling",
-          collections: ["shangri-la", "joy-series"],
+          collections: ["shangri-la"],
           shortDescription:
             "A soft highland white-peach sparkling drink with a beauty-inspired functional edge.",
           longDescription:
@@ -84,7 +79,7 @@ export const translations = {
           name: "Blueberry CSD [Joy Series]",
           category: "sparkling-water",
           categoryLabel: "Juice Sparkling",
-          collections: ["shangri-la", "joy-series"],
+          collections: ["shangri-la"],
           shortDescription:
             "A vibrant blueberry sparkling drink with NFC juice character, vitamin B12, and a brighter functional refreshment profile.",
           longDescription:
@@ -113,7 +108,7 @@ export const translations = {
           name: "CP Natural Mineral Water",
           category: "mineral-water",
           categoryLabel: "Mineral Water",
-          collections: ["shangri-la"],
+          collections: ["portfolio"],
           shortDescription:
             "A clean mineral-water essential built around pure source character and daily premium hydration.",
           longDescription:
@@ -268,28 +263,23 @@ export const translations = {
     },
 
     products: {
-      pageTitle: "香格里拉",
+      pageTitle: "悦系列",
       pageDescription:
-        "香格里拉，不只是一个地名，更是一种纯净的象征。雪山、净水、森林、珍稀物产与人文信仰，共同孕育出这片中国高原净土。我们从这里出发，将自然的清澈、健康的滋养与高原的生命力，融入每一款饮品之中。",
-      heroEyebrow: "香格里拉品牌",
-      joyEyebrow: "新品上市 · 悦系列",
-      joyTitle: "悦活当下，享自由",
-      joyDescription:
         "心向净土开，悦是身心得以洗涤的自由。香格里拉的悦活，是把高原果汁装进杯中的辽阔，是于尘市饮下一口原始的纯粹。",
-      catalogEyebrow: "双品牌产品架构",
+      heroEyebrow: "新品上市 · 悦系列",
+      catalogEyebrow: "产品组合架构",
       catalogTitle: "选择产品板块",
       exploreCta: "查看详情",
       backToProducts: "返回全部产品",
       relatedTitle: "你可能也会喜欢",
       heroStats: [
         { value: "05", label: "款产品" },
-        { value: "03", label: "个产品板块" },
+        { value: "02", label: "个产品板块" },
         { value: "15%+", label: "悦系列总果汁含量" },
       ],
       tabs: [
-        { id: "shangri-la", label: "香格里拉" },
-        { id: "joy-series", label: "悦系列" },
-        { id: "portfolio", label: "其他产品（Portfolio）" },
+        { id: "shangri-la", label: "香格里拉系列" },
+        { id: "portfolio", label: "其他产品" },
       ],
       detailLabels: {
         positioning: "核心卖点",
@@ -305,7 +295,7 @@ export const translations = {
           name: "白桃风味气泡饮｜悦系列",
           category: "sparkling-water",
           categoryLabel: "果汁气泡饮",
-          collections: ["shangri-la", "joy-series"],
+          collections: ["shangri-la"],
           shortDescription:
             "高品质白桃果感遇上细腻气泡，添加了维生素 B3 与胶原蛋白肽，轻盈好喝无负担。",
           longDescription:
@@ -334,7 +324,7 @@ export const translations = {
           name: "蓝莓风味气泡饮｜悦系列",
           category: "sparkling-water",
           categoryLabel: "气泡饮",
-          collections: ["shangri-la", "joy-series"],
+          collections: ["shangri-la"],
           shortDescription:
             "蓝莓果香、清透气泡与维生素 B12 结合，打造更有活力感的轻健康气泡饮。",
           longDescription:
@@ -363,7 +353,7 @@ export const translations = {
           name: "正大所以润矿泉水",
           category: "mineral-water",
           categoryLabel: "矿泉水",
-          collections: ["shangri-la"],
+          collections: ["portfolio"],
           shortDescription:
             "围绕纯净水源与品质日饮打造的高品质天然矿泉水。",
           longDescription:
