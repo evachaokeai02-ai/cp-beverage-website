@@ -10,13 +10,27 @@ import type { Language } from './i18n';
 
 type Page = 'home' | 'products';
 
-function getPageFromPath(pathname: string): Page {
-  return pathname === '/products' ? 'products' : 'home';
+type RouteState = {
+  page: Page;
+  productSlug: string | null;
+};
+
+function getRouteFromPath(pathname: string): RouteState {
+  if (pathname === '/products') {
+    return { page: 'products', productSlug: null };
+  }
+
+  if (pathname.startsWith('/products/')) {
+    return { page: 'products', productSlug: pathname.replace('/products/', '').split('/')[0] || null };
+  }
+
+  return { page: 'home', productSlug: null };
 }
 
 export default function App() {
   const [lang, setLang] = useState<Language>('en');
-  const [page, setPage] = useState<Page>(() => getPageFromPath(window.location.pathname));
+  const [route, setRoute] = useState<RouteState>(() => getRouteFromPath(window.location.pathname));
+  const { page, productSlug } = route;
   const t = translations[lang];
 
   const scrollToHash = useCallback((hash: string) => {
@@ -33,12 +47,12 @@ export default function App() {
   const navigate = useCallback(
     (path: string) => {
       const url = new URL(path, window.location.origin);
-      const nextPage = getPageFromPath(url.pathname);
+      const nextRoute = getRouteFromPath(url.pathname);
 
       window.history.pushState(null, '', `${url.pathname}${url.hash}`);
-      setPage(nextPage);
+      setRoute(nextRoute);
 
-      if (nextPage === 'home') {
+      if (nextRoute.page === 'home') {
         window.setTimeout(() => scrollToHash(url.hash), 0);
       } else {
         window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -49,10 +63,10 @@ export default function App() {
 
   useEffect(() => {
     const onPopState = () => {
-      const nextPage = getPageFromPath(window.location.pathname);
-      setPage(nextPage);
+      const nextRoute = getRouteFromPath(window.location.pathname);
+      setRoute(nextRoute);
 
-      if (nextPage === 'home') {
+      if (nextRoute.page === 'home') {
         window.setTimeout(() => scrollToHash(window.location.hash), 0);
       } else {
         window.scrollTo({ top: 0 });
@@ -73,7 +87,7 @@ export default function App() {
       <Navbar {...commonProps} />
       {page === 'products' ? (
         <main>
-          <ProductSection t={t} isPage />
+          <ProductSection t={t} isPage navigate={navigate} productSlug={productSlug} />
         </main>
       ) : (
         <main>
