@@ -43,11 +43,8 @@ function navigateWithFallback(path: string, navigate?: (path: string) => void) {
 
 function ProductImage({ product, priority = false, mode = 'card' }: ProductImageProps) {
   const dimensions = product.image ? productImageDimensions[product.image] : undefined;
-  const modeClass = {
-    card: `h-[88%] max-h-[20rem] ${product.imageScaleClass ?? 'scale-100'} ${product.imagePositionClass ?? ''}`,
-    detail: `h-[88%] max-h-[34rem] ${product.imageScaleClass ?? 'scale-100'} ${product.imagePositionClass ?? ''}`,
-    hero: `h-[92%] max-h-[24rem] ${product.imageScaleClass ?? 'scale-100'} ${product.imagePositionClass ?? ''}`,
-  }[mode];
+  const imageTransformClass = `${product.imageScaleClass ?? 'scale-100'} ${product.imagePositionClass ?? ''}`;
+  const hoverScaleClass = mode === 'detail' ? '' : 'group-hover:scale-[1.04]';
 
   return (
     <img
@@ -57,7 +54,7 @@ function ProductImage({ product, priority = false, mode = 'card' }: ProductImage
       height={dimensions?.height}
       loading={priority ? 'eager' : 'lazy'}
       decoding="async"
-      className={`relative z-10 w-full object-contain object-bottom drop-shadow-[0_28px_28px_rgba(15,23,42,0.16)] transition-transform duration-700 ease-out group-hover:scale-[1.04] ${modeClass}`}
+      className={`absolute inset-0 z-10 h-full w-full object-cover object-center drop-shadow-[0_28px_28px_rgba(15,23,42,0.16)] transition-transform duration-700 ease-out ${hoverScaleClass} ${imageTransformClass}`}
     />
   );
 }
