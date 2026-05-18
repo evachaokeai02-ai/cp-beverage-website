@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react';
 import { motion } from 'motion/react';
 import { ArrowLeft, ArrowRight, Check, Sparkles } from 'lucide-react';
 import type { MouseEvent } from 'react';
-import type { Product, ProductTab } from '../types';
+import type { Product, ProductCollection, ProductTab } from '../types';
 
 const productImageDimensions: Record<string, { width: number; height: number }> = {
   '/ProductSection-Peach-CSD.png': { width: 1156, height: 1360 },
@@ -78,7 +78,7 @@ function ProductsHeroVisual() {
     <div className="relative h-80 overflow-hidden rounded-[1.75rem] shadow-inner lg:h-[28rem]">
       <img
         src={productsHeroImage}
-        alt="CP Beverage sparkling drink product lineup"
+        alt="Shangri-La Joy Series sparkling drink promotion"
         width={dimensions?.width}
         height={dimensions?.height}
         loading="eager"
@@ -233,12 +233,32 @@ function ProductsHero({ t }: { t: any }) {
   );
 }
 
+function JoySeriesOverview({ t }: { t: any }) {
+  return (
+    <motion.section
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: '100px' }}
+      transition={{ duration: 0.55, ease: 'easeOut' }}
+      className="mb-12 overflow-hidden rounded-[2rem] border border-sky-100 bg-white/82 p-6 shadow-[0_20px_70px_rgba(15,23,42,0.08)] backdrop-blur md:p-8"
+    >
+      <div className="grid gap-5 lg:grid-cols-[0.28fr_0.72fr] lg:items-start">
+        <div>
+          <p className="text-sm font-bold uppercase tracking-[0.28em] text-brand-blue">{t.products.joyEyebrow}</p>
+          <h2 className="mt-3 font-display text-3xl font-bold text-brand-navy md:text-4xl">{t.products.joyTitle}</h2>
+        </div>
+        <p className="text-lg font-light leading-9 text-slate-600">{t.products.joyDescription}</p>
+      </div>
+    </motion.section>
+  );
+}
+
 function ProductListingPage({ t, navigate }: ProductSectionProps) {
-  const [activeTab, setActiveTab] = useState<ProductTab['id']>('all');
+  const [activeTab, setActiveTab] = useState<ProductCollection>('shangri-la');
   const products: Product[] = t.products.items;
   const tabs: ProductTab[] = t.products.tabs;
   const filteredProducts = useMemo(
-    () => (activeTab === 'all' ? products : products.filter((product) => product.category === activeTab)),
+    () => products.filter((product) => product.collections.includes(activeTab)),
     [activeTab, products],
   );
 
@@ -250,6 +270,7 @@ function ProductListingPage({ t, navigate }: ProductSectionProps) {
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <ProductsHero t={t} />
+        <JoySeriesOverview t={t} />
 
         <div className="mb-10 flex flex-col gap-5 md:mb-12 md:flex-row md:items-end md:justify-between">
           <div>

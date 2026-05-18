@@ -1,4 +1,5 @@
 export type ProductCategory = 'sparkling-water' | 'mineral-water' | 'functional-beverage';
+export type ProductCollection = 'shangri-la' | 'joy-series' | 'portfolio';
 
 export interface Product {
   id: string;
@@ -6,6 +7,7 @@ export interface Product {
   name: string;
   category: ProductCategory;
   categoryLabel: string;
+  collections: ProductCollection[];
   shortDescription: string;
   longDescription: string;
   image: string;
@@ -23,7 +25,7 @@ export interface Product {
 }
 
 export interface ProductTab {
-  id: 'all' | ProductCategory;
+  id: ProductCollection;
   label: string;
 }
 
