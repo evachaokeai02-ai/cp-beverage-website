@@ -84,7 +84,7 @@ export const translations = {
             "A vibrant zero-sugar blueberry sparkling drink with a brighter functional refreshment profile.",
           longDescription:
             "Blueberry CSD [Joy Series] brings plateau blueberry inspiration into a clean, sparkling format. Lutein and carotene add a distinctive functional story while the blue-toned visual system keeps the SKU aligned with the Joy Series family.",
-          image: "/ProductSection-Blueberry-CSD.png",
+          image: "/ProductSection-Blueberry-CSD.png?v=20260518",
           flavor: "Blueberry",
           size: "420 ml / bottle",
           tags: ["Zero Sugar", "Sparkling Water", "NFC Juice", "Highland Fruit"],
@@ -142,7 +142,7 @@ export const translations = {
             "CP Shake Honey turns honey water into a memorable ritual. The cap stores real honey separately, inviting consumers to twist, shake, and enjoy a fresher honey-lime beverage with stronger shelf storytelling.",
           image: "/ProductSection-Honey.png",
           flavor: "Honey Lime",
-          size: "500 ml / bottle",
+          size: "350 ml / bottle",
           tags: ["Real Honey", "Shake Ritual", "Lime Fresh", "Interactive"],
           keySellingPoints: [
             "Interactive cap mechanism creates a memorable consumer ritual.",
@@ -326,7 +326,7 @@ export const translations = {
             "0 糖蓝莓风味气泡饮，呈现更明亮、更有活力的功能型清爽体验。",
           longDescription:
             "蓝莓风味气泡饮｜悦系列将高原蓝莓灵感融入清透气泡饮表达，并以叶黄素与胡萝卜素建立更清晰的功能感，让蓝色风味视觉与悦系列家族感保持统一。",
-          image: "/ProductSection-Blueberry-CSD.png",
+          image: "/ProductSection-Blueberry-CSD.png?v=20260518",
           flavor: "蓝莓风味",
           size: "420 ml / 瓶",
           tags: ["0 糖", "气泡饮", "NFC 果汁", "高原果感"],
@@ -384,7 +384,7 @@ export const translations = {
             "正大现摇蜂蜜水将蜂蜜水变成更有记忆点的互动饮用仪式。蜂蜜独立锁鲜于瓶盖，消费者旋开、摇匀后即可享用更清新的蜂蜜青柠风味。",
           image: "/ProductSection-Honey.png",
           flavor: "蜂蜜青柠",
-          size: "500 ml / 瓶",
+          size: "350 ml / 瓶",
           tags: ["真蜂蜜", "现摇体验", "青柠清爽", "互动饮用"],
           keySellingPoints: [
             "瓶盖互动结构创造更强消费者记忆点。",
