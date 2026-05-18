@@ -173,7 +173,7 @@ export const translations = {
             "CP Electrolyte Beverage supports active lifestyles with a clean lemon profile and electrolyte replenishment. The wider bottle image is staged with a panoramic product presentation to keep catalogue rhythm consistent.",
           image: "/ProductSection-Electrolyte Water.png",
           flavor: "Lemon",
-          size: "500 ml / bottle",
+          size: "1L / bottle",
           tags: ["Electrolytes", "Active Hydration", "Lemon Crisp", "Recovery"],
           keySellingPoints: [
             "Electrolyte support for active hydration needs.",
@@ -418,7 +418,7 @@ export const translations = {
             "正大电解质饮料围绕活力生活方式打造，以清爽柠檬风味与电解质补充满足运动、通勤、高温天气与日常恢复等场景需求。",
           image: "/ProductSection-Electrolyte Water.png",
           flavor: "柠檬风味",
-          size: "500 ml / 瓶",
+          size: "1L / 瓶",
           tags: ["电解质", "活力补水", "柠檬风味", "恢复场景"],
           keySellingPoints: [
             "补充电解质，满足活力补水需求。",
