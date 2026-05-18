@@ -1,5 +1,5 @@
 export type ProductCategory = 'sparkling-water' | 'mineral-water' | 'functional-beverage';
-export type ProductCollection = 'shangri-la' | 'joy-series' | 'portfolio';
+export type ProductCollection = 'shangri-la' | 'portfolio';
 
 export interface Product {
   id: string;
