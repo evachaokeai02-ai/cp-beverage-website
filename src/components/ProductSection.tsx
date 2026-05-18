@@ -7,10 +7,22 @@ import type { Product, ProductTab } from '../types';
 const productImageDimensions: Record<string, { width: number; height: number }> = {
   '/ProductSection-Peach-CSD.png': { width: 1156, height: 1360 },
   '/ProductSection-Blueberry-CSD.png': { width: 1156, height: 1360 },
+  '/ProductSection-CSD.png': { width: 1315, height: 1196 },
   '/ProductSection-Water.png': { width: 1156, height: 1360 },
   '/ProductSection-Honey.png': { width: 1156, height: 1360 },
   '/ProductSection-Electrolyte Water.png': { width: 1156, height: 1360 },
 };
+
+const productsHeroImage = '/ProductSection-CSD.png?v=20260518';
+
+function getProductImageDimensions(src: string | undefined) {
+  if (!src) {
+    return undefined;
+  }
+
+  const normalizedSrc = src.split('?')[0];
+  return productImageDimensions[normalizedSrc];
+}
 
 type ProductSectionProps = {
   t: any;
@@ -42,7 +54,7 @@ function navigateWithFallback(path: string, navigate?: (path: string) => void) {
 }
 
 function ProductImage({ product, priority = false, mode = 'card' }: ProductImageProps) {
-  const dimensions = product.image ? productImageDimensions[product.image] : undefined;
+  const dimensions = getProductImageDimensions(product.image);
   const imageTransformClass = `${product.imageScaleClass ?? 'scale-100'} ${product.imagePositionClass ?? ''}`;
   const hoverScaleClass = mode === 'detail' ? '' : 'group-hover:scale-[1.04]';
 
@@ -56,6 +68,24 @@ function ProductImage({ product, priority = false, mode = 'card' }: ProductImage
       decoding="async"
       className={`absolute inset-0 z-10 h-full w-full object-cover object-center drop-shadow-[0_28px_28px_rgba(15,23,42,0.16)] transition-transform duration-700 ease-out ${hoverScaleClass} ${imageTransformClass}`}
     />
+  );
+}
+
+function ProductsHeroVisual() {
+  const dimensions = getProductImageDimensions(productsHeroImage);
+
+  return (
+    <div className="relative h-80 overflow-hidden rounded-[1.75rem] shadow-inner lg:h-[28rem]">
+      <img
+        src={productsHeroImage}
+        alt="CP Beverage sparkling drink product lineup"
+        width={dimensions?.width}
+        height={dimensions?.height}
+        loading="eager"
+        decoding="async"
+        className="absolute inset-0 h-full w-full object-cover object-center"
+      />
+    </div>
   );
 }
 
@@ -171,9 +201,7 @@ function ProductGrid({ products, exploreLabel, navigate }: { products: Product[]
   );
 }
 
-function ProductsHero({ products, t }: { products: Product[]; t: any }) {
-  const heroProduct = products[0];
-
+function ProductsHero({ t }: { t: any }) {
   return (
     <div className="relative mb-14 overflow-hidden rounded-[2.5rem] border border-white/80 bg-gradient-to-br from-white via-sky-50 to-blue-100/70 p-6 shadow-[0_28px_90px_rgba(14,165,233,0.16)] md:mb-16 md:p-10 lg:p-12">
       <div className="absolute -left-20 top-8 h-56 w-56 rounded-full bg-white/70 blur-3xl" />
@@ -199,7 +227,7 @@ function ProductsHero({ products, t }: { products: Product[]; t: any }) {
           </div>
         </div>
 
-        {heroProduct && <ProductVisualStage product={heroProduct} priority mode="hero" />}
+        <ProductsHeroVisual />
       </div>
     </div>
   );
@@ -221,7 +249,7 @@ function ProductListingPage({ t, navigate }: ProductSectionProps) {
       <div className="pointer-events-none absolute bottom-64 right-0 h-96 w-96 translate-x-1/3 rounded-full bg-blue-100/70 blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <ProductsHero products={products} t={t} />
+        <ProductsHero t={t} />
 
         <div className="mb-10 flex flex-col gap-5 md:mb-12 md:flex-row md:items-end md:justify-between">
           <div>
