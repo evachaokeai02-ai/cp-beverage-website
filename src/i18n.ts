@@ -55,7 +55,7 @@ export const translations = {
             "A soft highland white-peach sparkling drink with a beauty-inspired functional edge.",
           longDescription:
             "Peach CSD [Joy Series] is a premium juice-based sparkling beverage made with high-quality white peach character, delicate bubbles, vitamin B3, and collagen peptides. With 15%+ total juice content and zero fat, it tastes light and refreshing for every moment of the day.",
-          image: "/ProductSection-Peach-CSD.png",
+          image: "/Whitepeach-CSD.jpeg",
           flavor: "White Peach",
           size: "420 ml / bottle",
           tags: ["15%+ Juice", "NFC Added", "Zero Fat", "Highland Fruit"],
@@ -84,7 +84,7 @@ export const translations = {
             "A vibrant blueberry sparkling drink with NFC juice character, vitamin B12, and a brighter functional refreshment profile.",
           longDescription:
             "Blueberry CSD [Joy Series] combines blueberry fruit character, clean bubbles, NFC juice, and vitamin B12 in a zero-fat formula. The crisp blue visual system supports an active, light-refreshment story across convenience, fitness, office, and e-commerce occasions.",
-          image: "/ProductSection-Blueberry-CSD.png?v=20260518",
+          image: "/Blueberry-CSD.jpeg",
           flavor: "Blueberry",
           size: "420 ml / bottle",
           tags: ["NFC Juice", "Vitamin B12", "Zero Fat", "Highland Fruit"],
@@ -300,7 +300,7 @@ export const translations = {
             "高品质白桃果感遇上细腻气泡，添加了维生素 B3 与胶原蛋白肽，轻盈好喝无负担。",
           longDescription:
             "悦系列白桃风味气泡饮是一款以果汁为基底的高端气泡饮，甄选云南白桃风味灵感，带来柔和桃香与清透气泡感。产品总果汁含量大于 15%，添加 NFC 果汁、维生素 B3 与胶原蛋白肽，0 脂肪，清爽不厚重，适合通勤、办公、轻食与日常放松的每一个时刻。",
-          image: "/ProductSection-Peach-CSD.png",
+          image: "/Whitepeach-CSD.jpeg",
           flavor: "白桃果香",
           size: "420 ml / 瓶",
           tags: ["15%+ 果汁", "添加 NFC", "0 脂肪", "高原果感"],
@@ -329,7 +329,7 @@ export const translations = {
             "蓝莓果香、清透气泡与维生素 B12 结合，打造更有活力感的轻健康气泡饮。",
           longDescription:
             "悦系列蓝莓风味气泡饮以蓝莓果香和清透气泡打开第一口记忆点，添加 NFC 果汁与维生素 B12，并以 0 脂肪配方回应年轻消费者对轻负担、好入口与日常活力感的期待。蓝色视觉清爽醒目，适合在便利、健身、办公与电商场景中形成悦系列家族化陈列。",
-          image: "/ProductSection-Blueberry-CSD.png?v=20260518",
+          image: "/Blueberry-CSD.jpeg",
           flavor: "蓝莓果香",
           size: "420 ml / 瓶",
           tags: ["NFC 果汁", "维生素 B12", "0 脂肪", "蓝莓果香"],

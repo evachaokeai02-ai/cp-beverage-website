@@ -5,15 +5,15 @@ import type { MouseEvent } from 'react';
 import type { Product, ProductCollection, ProductTab } from '../types';
 
 const productImageDimensions: Record<string, { width: number; height: number }> = {
-  '/ProductSection-Peach-CSD.png': { width: 1156, height: 1360 },
-  '/ProductSection-Blueberry-CSD.png': { width: 1156, height: 1360 },
-  '/ProductSection-CSD.png': { width: 1315, height: 1196 },
+  '/Whitepeach-CSD.jpeg': { width: 6104, height: 12133 },
+  '/Blueberry-CSD.jpeg': { width: 5494, height: 10920 },
+  '/CSD.png': { width: 2638, height: 1868 },
   '/ProductSection-Water.png': { width: 1156, height: 1360 },
   '/ProductSection-Honey.png': { width: 1156, height: 1360 },
   '/ProductSection-Electrolyte Water.png': { width: 1156, height: 1360 },
 };
 
-const productsHeroImage = '/ProductSection-CSD.png?v=20260518';
+const productsHeroImage = '/CSD.png';
 
 function getProductImageDimensions(src: string | undefined) {
   if (!src) {
