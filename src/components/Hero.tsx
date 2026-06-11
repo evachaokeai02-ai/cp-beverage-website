@@ -20,7 +20,7 @@ export default function Hero({ t, navigate }: HeroProps) {
 
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 bg-brand-navy">
         <img
           src="/hero-shangrila.jpg"
           alt="Colorful Shangri-La"
@@ -29,9 +29,22 @@ export default function Hero({ t, navigate }: HeroProps) {
           loading="eager"
           decoding="async"
           fetchPriority="high"
-          className="w-full h-full object-cover"
+          className="absolute inset-0 h-full w-full object-cover"
         />
-        <div className="absolute inset-0 bg-brand-navy/30" />
+        <video
+          className="absolute inset-0 h-full w-full object-cover"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          poster="/hero-shangrila.jpg"
+          aria-hidden="true"
+        >
+          <source src="/hero-shangrila%20video" />
+        </video>
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-navy/55 via-brand-navy/25 to-brand-navy/65" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_42%,rgba(255,255,255,0.18),transparent_34%),linear-gradient(90deg,rgba(15,23,42,0.35),transparent_28%,transparent_72%,rgba(15,23,42,0.35))]" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
