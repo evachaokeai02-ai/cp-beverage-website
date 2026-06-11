@@ -7,6 +7,9 @@ type HeroProps = {
   navigate: (path: string) => void;
 };
 
+const shangrilaHeroVideo =
+  '/Gen-4%20Turbo%20-%20Transform%20this%20static%20iceberg%20and%20snow%20mountain%20scene%20into%20a%20premium%20cinematic%20website.mp4';
+
 export default function Hero({ t, navigate }: HeroProps) {
   const handleProductsClick = (event: MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault();
@@ -29,10 +32,10 @@ export default function Hero({ t, navigate }: HeroProps) {
           loading="eager"
           decoding="async"
           fetchPriority="high"
-          className="absolute inset-0 h-full w-full object-cover"
+          className="absolute inset-0 h-full w-full scale-105 object-cover"
         />
         <video
-          className="absolute inset-0 h-full w-full object-cover"
+          className="absolute inset-0 h-full w-full object-cover motion-safe:scale-[1.02]"
           autoPlay
           muted
           loop
@@ -41,10 +44,12 @@ export default function Hero({ t, navigate }: HeroProps) {
           poster="/hero-shangrila.jpg"
           aria-hidden="true"
         >
-          <source src="/hero-shangrila%20video" />
+          <source src={shangrilaHeroVideo} type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-navy/55 via-brand-navy/25 to-brand-navy/65" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_42%,rgba(255,255,255,0.18),transparent_34%),linear-gradient(90deg,rgba(15,23,42,0.35),transparent_28%,transparent_72%,rgba(15,23,42,0.35))]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-navy/70 via-brand-navy/20 to-brand-navy/75" />
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(4,12,28,0.72),rgba(4,12,28,0.18)_28%,rgba(4,12,28,0.1)_62%,rgba(4,12,28,0.66)),radial-gradient(circle_at_50%_38%,rgba(255,255,255,0.24),transparent_31%),radial-gradient(circle_at_70%_18%,rgba(56,189,248,0.2),transparent_28%)]" />
+        <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-brand-navy/80 to-transparent" />
+        <div className="absolute inset-0 opacity-[0.16] mix-blend-screen bg-[radial-gradient(circle_at_25%_20%,rgba(255,255,255,0.45)_0_1px,transparent_1px),radial-gradient(circle_at_80%_30%,rgba(255,255,255,0.35)_0_1px,transparent_1px)] bg-[length:72px_72px,118px_118px]" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
