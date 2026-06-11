@@ -7,8 +7,7 @@ type HeroProps = {
   navigate: (path: string) => void;
 };
 
-const shangrilaHeroVideo =
-  '/Gen-4%20Turbo%20-%20Transform%20this%20static%20iceberg%20and%20snow%20mountain%20scene%20into%20a%20premium%20cinematic%20website.mp4';
+const shangrilaHeroVideo = '/Create_a_perfect_seamless_loop.mp4';
 
 export default function Hero({ t, navigate }: HeroProps) {
   const handleProductsClick = (event: MouseEvent<HTMLAnchorElement>) => {
