@@ -8,7 +8,7 @@ export const translations = {
     },
 
     hero: {
-      badge: "CP (Shangri-la) Beverage Co.",
+      badge: "CP (Shangri-la) Beverage Co., Ltd.",
       title1: "One Sip to",
       title2: "Colorful Shangri-La.",
       subtitle:
@@ -236,9 +236,9 @@ export const translations = {
       story: "Brand Story",
       email: "yujg@cpgroup.cn",
       company:
-        "CP (Shangri-la) Beverage Co. is dedicated to building a more vibrant beverage portfolio through quality, innovation, and modern consumer insight.",
+        "CP (Shangri-la) Beverage Co., Ltd. is dedicated to building a more vibrant beverage portfolio through quality, innovation, and modern consumer insight.",
       region: "China / International",
-      rights: "© 2026 CP (Shangri-la) Beverage Co. All rights reserved.",
+      rights: "© 2026 CP (Shangri-la) Beverage Co., Ltd. All rights reserved.",
       privacy: "Privacy Policy",
       terms: "Terms of Trade",
     },
