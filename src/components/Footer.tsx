@@ -49,7 +49,7 @@ export default function Footer({ t, navigate }: FooterProps) {
             <h4 className="font-display font-bold text-brand-navy mb-6">{t.footer.contact}</h4>
             <ul className="space-y-4 text-sm text-slate-500 font-medium">
               <li>{t.footer.email}</li>
-              <li>CP (Shangri-la) Beverage Co.</li>
+              <li>CP (Shangri-la) Beverage Co., Ltd.</li>
               <li>{t.footer.region}</li>
             </ul>
           </div>
